@@ -1,0 +1,39 @@
+@use "./variables" as *;
+
+.about-more-wrapper {
+    max-width: 70rem;
+    margin-inline: auto;
+    padding-block: 6.25rem 7.5rem;
+    display: grid;
+    gap: 6rem;
+    padding-inline: 4rem;
+    align-items: center;
+    @media (min-width: 60rem) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.about-more-content {
+    h3 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        @media (min-width: 33rem) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+    p {
+        color: $clr-primary-200;
+        margin-bottom: 2.25rem;
+        @media (min-width: 33rem) {
+            font-size: 1.125rem;
+            line-height: 1.625;
+        }
+    }
+}
+
+.about-more-image {
+    margin-inline: auto;
+}

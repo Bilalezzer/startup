@@ -1,0 +1,42 @@
+@use "./variables" as *;
+
+.footer-wrapper {
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 4rem;
+    padding-top: 6.25rem;
+    color: $clr-primary-200;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: 60rem) {
+        grid-template-columns: 42% repeat(3, 1fr);
+    }
+    h4 {
+        color: $clr-neutral-100;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-bottom: 2.5rem;
+    }
+    ul {
+        display: grid;
+        gap: 1rem;
+    }
+}
+
+.social-links {
+    max-width: 22rem;
+    padding-bottom: 6rem;
+    margin-right: auto;
+    > img {
+        margin-bottom: 2rem;
+    }
+    > p {
+        margin-bottom: 2.25rem;
+    }
+    > .flex-group {
+        gap: 1rem;
+        justify-content: start;
+        fill: $clr-primary-200;
+    }
+}

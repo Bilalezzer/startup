@@ -1,0 +1,51 @@
+@use "./variables" as *;
+@use "./reset" as *;
+@use "./header" as *;
+@use "./hero" as *;
+@use "./features" as *;
+@use "./about" as *;
+@use "./about-more" as *;
+@use "./testimonials" as *;
+@use "./footer" as *;
+
+body {
+    font-family: $ff-body;
+    background-color: $clr-primary-900;
+    color: $clr-neutral-100;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.btn {
+    color: $clr-neutral-100;
+    font-weight: 700;
+    padding: 0.75rem 1.75rem;
+}
+
+.primary-btn {
+    display: block;
+    padding: 0.75rem 2.25rem;
+    background: $clr-primary-500;
+    border-radius: 0.375rem;
+}
+
+.flex-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.secondary-btn {
+    display: block;
+    padding: 0.75rem 2.25rem;
+    background: $clr-primary-700;
+    border-radius: 0.375rem;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}

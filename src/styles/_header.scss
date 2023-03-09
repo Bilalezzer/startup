@@ -1,0 +1,78 @@
+@use "./variables" as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    max-width: 75rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    position: relative;
+}
+
+.navigation {
+    display: none;
+    @media (min-width: 61rem) {
+        display: block;
+    }
+}
+
+.navigation[aria-expended="true"] {
+    display: flex;
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    min-width: 16rem;
+    padding: 1.25rem 1rem;
+    background-color: $clr-primary-700;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0 0 0 / 0.1);
+    z-index: 50;
+    .nav-list {
+        flex-direction: column;
+    }
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-link {
+    color: $clr-neutral-100;
+}
+
+.sign-container {
+    display: none;
+    align-items: center;
+    margin-left: auto;
+    @media (min-width: 45rem) {
+        display: flex;
+    }
+}
+
+.logo {
+    padding: 2rem 1rem;
+    margin-right: 3.5rem;
+}
+
+.menu-toggler {
+    background: transparent;
+    display: grid;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+    .bar {
+        background-color: $clr-neutral-100;
+        height: 0.1rem;
+        width: 2rem;
+    }
+    @media (min-width: 61rem) {
+        display: none;
+    }
+    @media (min-width: 45rem) {
+        margin-left: 1rem;
+    }
+}
