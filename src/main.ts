@@ -1,5 +1,7 @@
 import './styles/style.css';
 
+// Hamburger / Mobile Menu
+
 const menuToggler = document.querySelector('.menu-toggler');
 const navMenu = document.querySelector('#navigation');
 
@@ -11,10 +13,14 @@ menuToggler?.addEventListener('click', function () {
 	}
 });
 
-function zip(...arrays: number[][]): number[][] {
-	let zipped: number[][] = [];
-	arrays.forEach((array) => zipped.push(array));
-	return zipped;
-}
+// Scroll button
 
-console.log(zip([1, 2], [3, 4]));
+const scrollBtn = document.querySelector('.scroll-btn');
+
+addEventListener('scroll', () => {
+	if (scrollY !== 0) {
+		scrollBtn?.classList.add('show');
+	} else {
+		scrollBtn?.classList.remove('show');
+	}
+});
