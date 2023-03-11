@@ -21,6 +21,10 @@ body {
     color: $clr-neutral-100;
     font-weight: 700;
     padding: 0.75rem 1.75rem;
+    transition: opacity 250ms linear;
+    &:is(:hover, :focus) {
+        opacity: 0.6;
+    }
 }
 
 .primary-btn {

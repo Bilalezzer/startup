@@ -24,3 +24,15 @@ addEventListener('scroll', () => {
 		scrollBtn?.classList.remove('show');
 	}
 });
+
+// Sticky Header
+
+const header = document.querySelector('.header');
+addEventListener('scroll', () => {
+	if (header.offsetTop < scrollY) {
+		header.classList.add('sticky');
+	} else {
+		header.classList.remove('sticky')
+	}
+
+})

@@ -40,3 +40,15 @@
         fill: $clr-primary-200;
     }
 }
+
+.footer a {
+    color: $clr-primary-200;
+    transition: opacity 250ms linear;
+    &:is(:hover, :focus) {
+        opacity: 0.6;
+    }
+}
+
+.footer svg {
+    fill: $clr-primary-200;
+}
