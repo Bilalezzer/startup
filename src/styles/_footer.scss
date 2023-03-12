@@ -7,6 +7,7 @@
     padding-top: 6.25rem;
     color: $clr-primary-200;
     display: grid;
+    gap: 3rem;
     grid-template-columns: repeat(2, 1fr);
     @media (min-width: 60rem) {
         grid-template-columns: 42% repeat(3, 1fr);

@@ -1,6 +1,9 @@
+@use "./animations" as *;
+
 .hero {
-    padding: 6rem 2rem;
+    padding: 9rem 2rem 6rem;
     text-align: center;
+    animation: fadeIn 1s 1s linear 1 both;
     @media (min-width: 61rem) {
         padding-block: 15rem 11rem;
     }
