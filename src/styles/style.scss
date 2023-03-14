@@ -7,6 +7,7 @@
 @use "./about-more" as *;
 @use "./testimonials" as *;
 @use "./footer" as *;
+@use "./sign-in" as *;
 
 body {
     font-family: $ff-body;
@@ -18,10 +19,12 @@ body {
 }
 
 .btn {
+    border: 0;
     color: $clr-neutral-100;
     font-weight: 700;
     padding: 0.75rem 1.75rem;
     transition: opacity 250ms linear;
+    cursor: pointer;
     &:is(:hover, :focus) {
         opacity: 0.6;
     }

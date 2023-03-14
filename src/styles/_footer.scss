@@ -1,5 +1,9 @@
 @use "./variables" as *;
 
+.footer {
+    background-color: rgb(74 108 247 / 0.1);
+}
+
 .footer-wrapper {
     max-width: 80rem;
     margin-inline: auto;
