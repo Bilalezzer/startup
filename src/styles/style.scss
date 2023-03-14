@@ -8,6 +8,7 @@
 @use "./testimonials" as *;
 @use "./footer" as *;
 @use "./sign-in" as *;
+@use "./support" as *;
 
 body {
     font-family: $ff-body;

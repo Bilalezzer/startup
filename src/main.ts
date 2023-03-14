@@ -27,12 +27,11 @@ addEventListener('scroll', () => {
 
 // Sticky Header
 
-const header = document.querySelector('.header');
-addEventListener('scroll', () => {
-	if (header.offsetTop < scrollY) {
-		header.classList.add('sticky');
-	} else {
-		header.classList.remove('sticky')
-	}
+const header = document.querySelector<HTMLElement>('.header');
 
-})
+window.addEventListener('scroll', handleScroll);
+
+function handleScroll() {
+	const shouldStick = header && header.offsetTop < window.scrollY;
+	header?.classList.toggle('sticky', shouldStick ? true : false);
+}

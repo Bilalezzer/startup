@@ -1,0 +1,115 @@
+@use "variables" as *;
+
+.support {
+    padding: 7.5em 2em 5em;
+}
+
+.support-wrapper {
+    max-width: 70rem;
+    margin-inline: auto;
+    display: grid;
+    gap: 1.5em;
+    @media (min-width: 60em) {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.help-card {
+    background-color: $clr-primary-800;
+    border-radius: 0.375rem;
+    padding: 3em;
+    h3 {
+        font-size: clamp(1.5rem, 1rem + 1vw, 1.875rem);
+        line-height: clamp(2rem, 1rem + 2vw, 2.25rem);
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+    }
+    p {
+        color: $clr-primary-200;
+        margin-bottom: 3rem;
+    }
+}
+
+.support-form {
+    display: grid;
+    column-gap: 1.5rem;
+    @media (min-width: 60em) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    label {
+        margin-bottom: 0.75em;
+    }
+    input,
+    textarea {
+        box-shadow: 0 5px 10px rgba(4 10 34 / 0.2);
+        border: 0.0625rem solid transparent;
+        background-color: $clr-primary-700;
+        padding: 0.75em 1.5em;
+        border-radius: 0.375rem;
+        margin-bottom: 2em;
+        color: $clr-primary-200;
+        &:focus {
+            outline: 0.0675rem solid $clr-primary-500;
+        }
+    }
+}
+
+@media (min-width: 60em) {
+    textarea {
+        grid-column: 1 / -1;
+    }
+    input[name="name"] {
+        grid-column: 1 / 2;
+    }
+    label[for="name"] {
+        grid-row: 1 / 2;
+    }
+    label[for="email"] {
+        grid-row: 1 / 2;
+    }
+
+    input[name="email"] {
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+    }
+}
+
+.subscribe-card {
+    padding: clamp(2rem, 1rem + 2vw, 2.75rem);
+    background-color: rgb(74 108 247 / 0.1);
+    color: $clr-primary-200;
+    border-radius: 0.375rem;
+    h4 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: $clr-neutral-100;
+    }
+    p:last-of-type {
+        text-align: center;
+    }
+    p:first-of-type {
+        padding-bottom: 2em;
+        border-bottom: 0.0675rem solid rgb(148 155 176 / 0.3);
+    }
+    input {
+        box-shadow: 0 5px 10px rgba(4 10 34 / 0.2);
+        border: 0.0625rem solid transparent;
+        background-color: $clr-primary-700;
+        padding: 0.75em 1.5em;
+        margin-top: 1rem;
+        border-radius: 0.375rem;
+        color: $clr-primary-200;
+        border: 0.0675rem solid rgb(148 155 176 / 0.3);
+        &:focus {
+            outline: 0.0675rem solid $clr-primary-500;
+        }
+        &:first-of-type {
+            margin-top: 2rem;
+        }
+    }
+    .btn {
+        width: 100%;
+        margin-block: 1em;
+    }
+}

@@ -40,7 +40,7 @@
 				</nav>
 				<div class="sign-container">
 					<a class="btn" href="sign-in.html">Sign In</a>
-					<a class="primary-btn btn" href="#sign-up">Sign Up</a>
+					<a class="primary-btn btn" href="sign-up.html">Sign Up</a>
 				</div>
 				<button type="button" class="menu-toggler" aria-controls="#navigation">
 					<span class="bar"></span>
@@ -176,7 +176,7 @@
 
 		<!-- About -->
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="about-wrapper">
 				<div class="about-content">
 					<h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
@@ -389,6 +389,52 @@
 			</div>
 		</section>
 
+		<!-- Support -->
+
+		<section class="support" id="support">
+			<div class="support-wrapper">
+				<div class="help-card">
+					<h3>Need Help? Open a Ticket</h3>
+					<p>Our support team will get back to you ASAP via email.</p>
+					<form class="support-form">
+						<label for="name">Your Name</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Enter your Name" />
+						<label for="email">Your Email</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Enter your Email" />
+						<label for="message">Your Message</label>
+						<textarea
+							name="message"
+							id="message"
+							rows="5"
+							placeholder="Enter your Message"></textarea>
+						<button class="btn primary-btn" type="submit">Submit Ticket</button>
+					</form>
+				</div>
+				<div class="subscribe-card">
+					<h4>Subscribe to receive future updates</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
+						voluptate aliquam? Blanditiis ex tempora impedit quas placeat
+						repellendus exercitationem minima!
+					</p>
+					<form class="subscribe-form">
+						<input type="text" placeholder="Enter your name" />
+						<input type="email" placeholder="Enter your email" />
+						<button class="btn primary-btn" type="submit">Subscribe</button>
+					</form>
+					<p>No spam guaranteed, So please don't send any spam mail.</p>
+				</div>
+			</div>
+		</section>
+
 		<!-- Footer -->
 
 		<footer class="footer">
@@ -457,6 +503,6 @@
 			<span class="arrow-up"></span>
 		</a>
 
-		<script type="module" src="/src/main.js"></script>
+		<script type="module" src="/src/main.ts"></script>
 	</body>
 </html>

@@ -516,11 +516,11 @@ h1 {
   fill: #949bb0;
 }
 
-.sign-in {
+.sign {
   padding: 12em 3em 9em;
 }
 
-.sign-in-card {
+.sign-card {
   max-width: 31.25rem;
   margin-inline: auto;
   background-color: #1d2144;
@@ -530,17 +530,17 @@ h1 {
   animation: fadeIn 1s 1s linear both;
   color: #949bb0;
 }
-.sign-in-card h3 {
+.sign-card h3 {
   font-size: clamp(1.5rem, 1rem + 1.5vw, 1.875rem);
   line-height: clamp(2rem, 1rem + 2vw, 2.25rem);
   font-weight: 700;
   margin-bottom: 0.75rem;
   color: #fff;
 }
-.sign-in-card > p:first-of-type {
+.sign-card > p:first-of-type {
   margin-bottom: 2.75em;
 }
-.sign-in-card > .flex-group {
+.sign-card > .flex-group {
   gap: 1em;
   box-shadow: 0 5px 10px rgba(4, 10, 34, 0.2);
   padding: 0.75em;
@@ -550,41 +550,41 @@ h1 {
   color: #949bb0;
   transition: color 200ms ease-in;
 }
-.sign-in-card > .flex-group:hover {
+.sign-card > .flex-group:hover {
   color: #fff;
 }
-.sign-in-card > p:nth-last-of-type(2) {
+.sign-card > p:nth-last-of-type(2) {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.25em;
   margin-bottom: 2rem;
 }
-.sign-in-card > p:nth-last-of-type(2) span {
+.sign-card > p:nth-last-of-type(2) span {
   height: 0.0625rem;
   background-color: #949bb0;
   width: min(100%, 4.375em);
 }
-.sign-in-card .btn.primary-btn {
+.sign-card .btn.primary-btn {
   margin-bottom: 1.5em;
 }
-.sign-in-card a:not(.flex-group) {
+.sign-card a:not(.flex-group) {
   color: #4a6cf7;
 }
-.sign-in-card a:not(.flex-group):is(:hover, :focus) {
+.sign-card a:not(.flex-group):is(:hover, :focus) {
   text-decoration: underline;
 }
 
-.sign-in-form {
+.sign-form {
   display: flex;
   flex-direction: column;
   text-align: start;
 }
-.sign-in-form > label {
+.sign-form > label {
   color: #fff;
   margin-bottom: 0.75em;
 }
-.sign-in-form > input {
+.sign-form > input {
   box-shadow: 0 5px 10px rgba(4, 10, 34, 0.2);
   border: 0.0625rem solid transparent;
   background-color: #242b51;
@@ -593,34 +593,34 @@ h1 {
   margin-bottom: 2em;
   color: #949bb0;
 }
-.sign-in-form > input:focus {
+.sign-form > input:focus {
   outline: 0.0675rem solid #4a6cf7;
 }
-.sign-in-form .flex-group {
+.sign-form .flex-group {
   gap: 1em;
   justify-content: start;
   margin-bottom: 2em;
 }
-.sign-in-form .flex-group a {
+.sign-form .flex-group a {
   margin-left: auto;
 }
-.sign-in-form .flex-group .checkbox {
+.sign-form .flex-group .checkbox {
   position: relative;
   padding-left: 2rem;
   cursor: pointer;
 }
-.sign-in-form .flex-group .checkbox input {
+.sign-form .flex-group .checkbox input {
   position: absolute;
   opacity: 0;
 }
-.sign-in-form .flex-group .checkbox input:checked ~ .checkmark svg {
+.sign-form .flex-group .checkbox input:checked ~ .checkmark svg {
   opacity: 1;
 }
-.sign-in-form .flex-group .checkbox input:disabled ~ .checkmark {
+.sign-form .flex-group .checkbox input:disabled ~ .checkmark {
   cursor: not-allowed;
   opacity: 0.6;
 }
-.sign-in-form .flex-group .checkbox .checkmark {
+.sign-form .flex-group .checkbox .checkmark {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -632,8 +632,125 @@ h1 {
   border: 0.0675rem solid rgba(250, 250, 250, 0.1);
   border-radius: 0.25rem;
 }
-.sign-in-form .flex-group .checkbox .checkmark svg {
+.sign-form .flex-group .checkbox .checkmark svg {
   opacity: 0;
+}
+
+.support {
+  padding: 7.5em 2em 5em;
+}
+
+.support-wrapper {
+  max-width: 70rem;
+  margin-inline: auto;
+  display: grid;
+  gap: 1.5em;
+}
+@media (min-width: 60em) {
+  .support-wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.help-card {
+  background-color: #1d2144;
+  border-radius: 0.375rem;
+  padding: 3em;
+}
+.help-card h3 {
+  font-size: clamp(1.5rem, 1rem + 1vw, 1.875rem);
+  line-height: clamp(2rem, 1rem + 2vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.help-card p {
+  color: #949bb0;
+  margin-bottom: 3rem;
+}
+
+.support-form {
+  display: grid;
+  column-gap: 1.5rem;
+}
+@media (min-width: 60em) {
+  .support-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.support-form label {
+  margin-bottom: 0.75em;
+}
+.support-form input,
+.support-form textarea {
+  box-shadow: 0 5px 10px rgba(4, 10, 34, 0.2);
+  border: 0.0625rem solid transparent;
+  background-color: #242b51;
+  padding: 0.75em 1.5em;
+  border-radius: 0.375rem;
+  margin-bottom: 2em;
+  color: #949bb0;
+}
+.support-form input:focus,
+.support-form textarea:focus {
+  outline: 0.0675rem solid #4a6cf7;
+}
+
+@media (min-width: 60em) {
+  textarea {
+    grid-column: 1/-1;
+  }
+  input[name=name] {
+    grid-column: 1/2;
+  }
+  label[for=name] {
+    grid-row: 1/2;
+  }
+  label[for=email] {
+    grid-row: 1/2;
+  }
+  input[name=email] {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+  }
+}
+.subscribe-card {
+  padding: clamp(2rem, 1rem + 2vw, 2.75rem);
+  background-color: rgba(74, 108, 247, 0.1);
+  color: #949bb0;
+  border-radius: 0.375rem;
+}
+.subscribe-card h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.subscribe-card p:last-of-type {
+  text-align: center;
+}
+.subscribe-card p:first-of-type {
+  padding-bottom: 2em;
+  border-bottom: 0.0675rem solid rgba(148, 155, 176, 0.3);
+}
+.subscribe-card input {
+  box-shadow: 0 5px 10px rgba(4, 10, 34, 0.2);
+  border: 0.0625rem solid transparent;
+  background-color: #242b51;
+  padding: 0.75em 1.5em;
+  margin-top: 1rem;
+  border-radius: 0.375rem;
+  color: #949bb0;
+  border: 0.0675rem solid rgba(148, 155, 176, 0.3);
+}
+.subscribe-card input:focus {
+  outline: 0.0675rem solid #4a6cf7;
+}
+.subscribe-card input:first-of-type {
+  margin-top: 2rem;
+}
+.subscribe-card .btn {
+  width: 100%;
+  margin-block: 1em;
 }
 
 body {

@@ -1,11 +1,11 @@
 @use "variables" as *;
 @use "animations" as *;
 
-.sign-in {
+.sign {
     padding: 12em 3em 9em;
 }
 
-.sign-in-card {
+.sign-card {
     max-width: 31.25rem;
     margin-inline: auto;
     background-color: $clr-primary-800;
@@ -62,7 +62,7 @@
     }
 }
 
-.sign-in-form {
+.sign-form {
     display: flex;
     flex-direction: column;
     text-align: start;
