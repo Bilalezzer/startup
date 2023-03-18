@@ -1,4 +1,4 @@
-import './styles/style.css';
+import './styles/style.scss';
 
 // Hamburger / Mobile Menu
 

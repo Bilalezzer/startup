@@ -1,0 +1,69 @@
+@use "variables" as *;
+
+.pricing {
+    padding: 7.5em 3em 5em;
+    text-align: center;
+
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        gap: 2rem;
+        margin-top: 5rem;
+    }
+
+    &-card {
+        text-align: left;
+        background-color: $clr-primary-700;
+        box-shadow: 0 5px 10px rgba(4, 10, 34, .2);
+        padding: 2.5rem 2rem;
+        border-radius: .375rem;
+        margin-bottom: 2.5rem;
+
+        &__heading {
+            font-weight: 700;
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            margin-bottom: .5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $clr-neutral-100;
+
+            p:last-of-type {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+            }
+
+            span {
+                color: $clr-primary-200;
+            }
+
+            + p {
+                margin-bottom: 1.75rem;
+            }
+        }
+
+        ul {
+            border-top: .0675rem solid rgb(148 155 176 / 0.15);
+            display: grid;
+            gap: 1rem;
+            padding-top: 2rem;
+            margin-top: 2rem;
+
+            li {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            svg {
+                fill: $clr-primary-500;
+                border-radius: 50%;
+                background-color: rgb(74 108 247 / .1);
+                height: 1.125rem;
+                width: 1.125rem;
+                padding: .25rem;
+            }
+        }
+    }
+}

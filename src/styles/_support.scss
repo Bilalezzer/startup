@@ -1,16 +1,15 @@
 @use "variables" as *;
 
 .support {
-    padding: 7.5em 2em 5em;
+    padding: 8em 3em 6em;
 }
 
-.support-wrapper {
-    max-width: 70rem;
-    margin-inline: auto;
+.support-container {
     display: grid;
-    gap: 1.5em;
-    @media (min-width: 60em) {
+    gap: 3em;
+    @media (min-width: 65em) {
         grid-template-columns: 2fr 1fr;
+        gap: 2em;
     }
 }
 
@@ -93,8 +92,8 @@
         border-bottom: 0.0675rem solid rgb(148 155 176 / 0.3);
     }
     input {
+        width: 100%;
         box-shadow: 0 5px 10px rgba(4 10 34 / 0.2);
-        border: 0.0625rem solid transparent;
         background-color: $clr-primary-700;
         padding: 0.75em 1.5em;
         margin-top: 1rem;
@@ -105,7 +104,7 @@
             outline: 0.0675rem solid $clr-primary-500;
         }
         &:first-of-type {
-            margin-top: 2rem;
+            margin-top: 2.5rem;
         }
     }
     .btn {
